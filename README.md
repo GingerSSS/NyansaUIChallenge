@@ -6,7 +6,7 @@ The code is revised according to
   origin code: https://github.com/Nyansa/interview-app-devmgr
   ref : https://sites.google.com/a/nyansa.com/nyansa-programming-exercise-angular/
 
-## Getting Started
+## 1. Getting Started
 
 To get you started you can simply clone the interview-app-devmgr repository and install the dependencies:
 
@@ -61,3 +61,7 @@ npm start
 ```
 
 Now browse to the app at `http://localhost:8000`.
+
+## 2. Using web app
+
+## 3. Structure
