@@ -94,7 +94,9 @@ Eg:
 
 ## 3. Structure
 ### (1) Tech stack
-   Front-end: Augular.js
-   Back-end: Node.js
+
+   * Front-end: Augular.js
+   
+   * Back-end: Node.js
 ### (2) P
    A short writeup of what tech stack is used, how the project is laid out, what are the important files, and any additional information that can facilitate the review of the code.
