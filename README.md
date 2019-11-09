@@ -1,5 +1,10 @@
 # Nyansa UI Challenge
-This is the take home project from Nyansa
+   This is the take home project from Nyansa
+
+## Note :
+The code is revised according to
+  origin code: https://github.com/Nyansa/interview-app-devmgr
+  ref : https://sites.google.com/a/nyansa.com/nyansa-programming-exercise-angular/
 
 ## Getting Started
 
@@ -56,7 +61,3 @@ npm start
 ```
 
 Now browse to the app at `http://localhost:8000`.
-
-
-## Note
-The code is re
