@@ -19,7 +19,7 @@ Clone the interview-app-devmgr repository using [git][git]:
 
 ```
 git clone https://github.com/GingerSSS/NyansaUIChallenge.git
-cd GingerSSS/NyansaUIChallenge/interview-app-devmgr
+cd NyansaUIChallenge/interview-app-devmgr
 ```
 
 ### Install Dependencies
