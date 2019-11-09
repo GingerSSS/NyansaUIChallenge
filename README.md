@@ -1,7 +1,7 @@
 # Nyansa UI Challenge
    This is the take home project from Nyansa
 
-## Note :
+### Note :
 The code is revised according to
   origin code: https://github.com/Nyansa/interview-app-devmgr
   ref : https://sites.google.com/a/nyansa.com/nyansa-programming-exercise-angular/
@@ -62,10 +62,35 @@ npm start
 
 Now browse to the app at `http://localhost:8000`.
 
-## 2. Using web app
+## 2. Using the Web App
+Note: Please clear the browsing data first!
 
 ### (1) Display top 5 CPU, Memory, TX and RX devices
 
-### (2) Display top 5 CPU, Memory, TX and RX devices
+#### Requirement: 
+Above the device table in the dashboard, we'd like to display the top 5 cpu, memory, TX and RX devices. Please create 4 separate panels that have the top 5 devices (highest usage first) in each of the four categories. For each device, please display the ip, the owner, and the field that is sorted. You must employ the DRY principle when creating these panels; JS frameworks have reusable Components/Directives for a reason.
+
+#### To Use:
+No need personal operation, the 4 seperate panels automatically show above the device.
+
+### (2) Enable editing of the owner's name
+
+#### Requirement: 
+Update the device list UI to enable editing of the owner's name. Please make sure that if that device is displayed anywhere else on the screen the owners name should also be updated. Please refrain from using plugins or other's code.
+
+#### To Use:
+Single click the owner's name you want to revise, input the new name you want to use, then click any where blank area in the page. The corresponding owner's name will automatically update on any other field using the same variable.
+
+Eg: 
+   Single click the owner: Mary Morales,
+   Input new name: Jingjie Sheng, (No enter keyboard click!)
+   Click the black area in the page.
+   The corresponding data change: 
+      CPU: #5
+      Memory: #2
+      TX: #1
+      RX: #1
 
 ## 3. Structure
+
+A short writeup of what tech stack is used, how the project is laid out, what are the important files, and any additional information that can facilitate the review of the code.
