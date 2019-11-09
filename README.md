@@ -79,7 +79,8 @@ Now browse to the app at `http://localhost:8000`.
    Update the device list UI to enable editing of the owner's name. Please make sure that if that device is displayed anywhere else on the screen the owners name should also be updated. Please refrain from using plugins or other's code.
 
 #### To Use:
-   Single click the owner's name you want to revise, input the new name you want to use, then click any where blank area in the page. The corresponding owner's name will automatically update on any other field using the same variable.
+   Single click the owner's name you want to revise, input the new name you want to use, then click any where blank area in the page. 
+   The corresponding owner's name will automatically update on any other fields using the same variable.
 
 Eg: 
    * Single click the owner: Mary Morales,
@@ -92,5 +93,8 @@ Eg:
             RX: #1
 
 ## 3. Structure
-
+### (1) Tech stack
+   Front-end: Augular.js
+   Back-end: Node.js
+### (2) P
    A short writeup of what tech stack is used, how the project is laid out, what are the important files, and any additional information that can facilitate the review of the code.
