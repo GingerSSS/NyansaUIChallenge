@@ -1,0 +1,24 @@
+<div class = "topTable" >
+    <h4> Top-5 devices sort by <strong>{{ category }}</strong> </h4>
+    <table class="table table-bordered table-condensed table-striped table-hover">
+        <thead>
+        <tr>
+            <th class="col-md-2">IP</th>
+            <th class="col-md-2">Owner</th>
+            <th class="col-md-2">{{ category }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="device in devices">
+            <td>{{ device.ip }}</td>
+            <td>{{ device.owner }}</td>
+<!--   refer:   https://stackoverflow.com/questions/20305012/angularjs-ng-if-with-multiple-conditions      -->
+            <td ng-if="category == 'CPU'">{{ device[key] }}%</td>
+            <td ng-if="category != 'CPU'">{{ device[key] | bytesToStr}}</td>
+        </tr>
+        <tr ng-show="!devices.length">
+            <td colspan="6">No device info available</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
