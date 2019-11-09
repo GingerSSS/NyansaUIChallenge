@@ -10,7 +10,7 @@ The code is revised according to
 
 To get you started you can simply clone the interview-app-devmgr repository and install the dependencies:
 
-### Prerequisites
+### (1) Prerequisites
 
 You need git to clone the interview-app-devmgr repository. You can get it from
 [http://git-scm.com/](http://git-scm.com/).
@@ -18,7 +18,7 @@ You need git to clone the interview-app-devmgr repository. You can get it from
 We also use a number of node.js tools to initialize and test interview-app-devmgr. You must have node.js and
 its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
-### Clone interview-app-devmgr
+### (2) Clone interview-app-devmgr
 
 Clone the interview-app-devmgr repository using [git][git]:
 
@@ -27,7 +27,7 @@ git clone https://github.com/GingerSSS/NyansaUIChallenge.git
 cd NyansaUIChallenge/interview-app-devmgr
 ```
 
-### Install Dependencies
+### (3) Install Dependencies
 
 We have two kinds of dependencies in this project: tools and angular framework code.  The tools help
 us manage and test the application.
@@ -51,7 +51,7 @@ folders in your project.
 interview-app-devmgr changes this location through the `.bowerrc` file.  Putting it in the src folder makes
 it easier to serve the files by a webserver.*
 
-### Run the Application
+### (4) Run the Application
 
 We have preconfigured the project with a simple development web server.  The simplest way to start
 this server is:
@@ -63,5 +63,9 @@ npm start
 Now browse to the app at `http://localhost:8000`.
 
 ## 2. Using web app
+
+### (1) Display top 5 CPU, Memory, TX and RX devices
+
+### (2) Display top 5 CPU, Memory, TX and RX devices
 
 ## 3. Structure
