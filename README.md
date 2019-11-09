@@ -87,16 +87,14 @@ Eg:
    * Input new name: Jingjie Sheng, (No enter keyboard click!)
    * Click the black area in the page.
    * The corresponding data change: 
-            CPU: #5
-            Memory: #2
-            TX: #1
-            RX: #1
+        * CPU: #5
+        * Memory: #2
+        * TX: #1
+        * RX: #1
 
 ## 3. Structure
-### (1) Tech stack
-
+### (1) Tech Stack
    * Front-end: Augular.js
-   
    * Back-end: Node.js
-### (2) P
-   A short writeup of what tech stack is used, how the project is laid out, what are the important files, and any additional information that can facilitate the review of the code.
+### (2) Project Structure
+ what are the important files, and any additional information that can facilitate the review of the code.
