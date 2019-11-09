@@ -1,4 +1,4 @@
-# NyansaUIChallenge
+# Nyansa UI Challenge
 This is the take home project from Nyansa
 
 ## Getting Started
@@ -56,3 +56,7 @@ npm start
 ```
 
 Now browse to the app at `http://localhost:8000`.
+
+
+## Note
+The code is re
