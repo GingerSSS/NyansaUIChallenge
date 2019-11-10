@@ -97,4 +97,13 @@ Eg:
    * Front-end: Augular.js
    * Back-end: Node.js
 ### (2) Project Structure
+src file is the main function file the project structure list as follow:
+   * src
+      - app
+         - app.js
+         - dashboard
+         - common
+      - assets
+         - 
+      - index.html
  what are the important files, and any additional information that can facilitate the review of the code.
