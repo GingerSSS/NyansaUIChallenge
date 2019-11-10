@@ -124,9 +124,9 @@ src
 
 #### (1) mysort/topfive.js
    * I created my own sort function here. The function take an array and a key as input, and output a sorted array. 
-   * The function is reusable by taking different key and sort the array not in place (in a copied array).
+   * The function is reusable by taking different key and sorting the array not in place (in a copied array).
    * Idea: 
-   copy the array first, and then compare the element in the copied array according to the descending order of the key, trim the sorted array to reserve the top 5 items.
+   copied the array first, then compared the elements in the copied array according to the descending order of the key, trimed the sorted array to reserve the top 5 items.
    * Reference: 
       * https://stackoverflow.com/questions/8837454/sort-array-of-objects-by-single-key-with-date-value
       * https://stackoverflow.com/questions/953071/how-to-easily-truncate-an-array-with-javascript/6928247
@@ -134,11 +134,18 @@ src
       
 #### (2) dashboard/dashboard.js
    * I added two reusable component (directive: top-five, contenteditable)
-      * 
-   * top-five: (apply two-way binding)
-   * contenteditable: provide function that edit the text in place and update the corresponding field in top-five table.
+      * Inspired by project requirement and Udemy: https://www.udemy.com/course/learn-angularjs/?start=495
+   * top-five: (apply two-way binding with scope)
+      * Provided functon that take category, key from view and assign to scope, also applied mysort function here to sort the devices by key, displayed the sorted devices back to view. (I think it's two one-way binding)
+      * Inherited the controller scope
+   * contenteditable: (apply two-way binding with ng-model) 
+      * Provided function that edit the text in place in html view and update the corresponding field in model, also displayed in top-five table.
+      * Update the controller scope.
    * Reference:
       * https://adrianmejia.com/creating-custom-angularjs-directives-for-beginners/
+      * https://www.3pillarglobal.com/insights/angularjs-understanding-directive-scope
+      * https://www.undefinednull.com/2014/02/11/mastering-the-scope-of-a-directive-in-angularjs/
+      * https://stackoverflow.com/questions/28425711/angularjs-pass-scope-variable-as-directive-attribute
       * https://fdietz.github.io/recipes-with-angular-js/common-user-interface-patterns/editing-text-in-place-using-html5-content-editable.html
       * https://adrianmejia.com/creating-a-restful-api-tutorial-with-nodejs-and-mongodb/ 
       (I saw the TODO in resources/devices.js, need to seed the database, but functions achieved without database, so here just a reference)
