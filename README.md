@@ -122,7 +122,7 @@ src
 ├── index.html  (revised)
 ```
 
-#### mysort/topfive.js
+#### (1) mysort/topfive.js
    * I created my own sort function here. The function take an array and a key as input, and output a sorted array. 
    * The function is reusable by taking different key and sort the array not in place (in a copied array).
    * Idea: 
@@ -132,13 +132,33 @@ src
       * https://stackoverflow.com/questions/953071/how-to-easily-truncate-an-array-with-javascript/6928247
       * https://stackoverflow.com/questions/9592740/how-can-you-sort-an-array-without-mutating-the-original-array
       
-#### dashboard/dashboard.js
+#### (2) dashboard/dashboard.js
    * I added two reusable component (directive: top-five, contenteditable)
+      * 
    * top-five: (apply two-way binding)
    * contenteditable: provide function that edit the text in place and update the corresponding field in top-five table.
-      * 
+   * Reference:
+      * https://adrianmejia.com/creating-custom-angularjs-directives-for-beginners/
+      * https://fdietz.github.io/recipes-with-angular-js/common-user-interface-patterns/editing-text-in-place-using-html5-content-editable.html
+      * https://adrianmejia.com/creating-a-restful-api-tutorial-with-nodejs-and-mongodb/ 
+      (I saw the TODO in resources/devices.js, need to seed the database, but functions achieved without database, so here just a reference)
    
-#### dashboard/dashboard.tpl.html
-#### dashboard/topfive.tpl.html
-
-#### assets/stylesheets/app.css
+#### (3) dashboard/dashboard.tpl.html
+   * use top-five as reusable component, bind category and key to the scope
+   * Styled the table by class "deviceTable" (app.css)
+   
+#### (4) dashboard/topfive.tpl.html
+   * I used the same structure and layout as dashboard.tpl.html
+   * ng-repeat: print the top 5 devices
+   * ng-if: if sort by CPU print CPU data without call formatting, else call formatting function
+   * Styled the top 5 tables by class "topTable" (app.css)
+   * Reference: 
+      * https://stackoverflow.com/questions/20305012/angularjs-ng-if-with-multiple-conditions
+      
+#### (5) assets/stylesheets/app.css
+   * Let devices table having 90% of page width, with left and right margin 5%
+   * Let top-five table having 40% of page width, with left and right margin 5%
+   * Made odd top-five table float on left, even float on right
+   
+#### (6) src/index.html
+   * Added script <script src="app/common/mysort/topfive.js"></script> in index.html to use mysort function.
