@@ -101,5 +101,44 @@ src file is the main function file the project structure list as follow:
 
 ```
 src
-├── 
+├── app
+│    ├── common
+│    │      ├── filters
+│    │      │     └── formatting.js
+│    │      ├── mysort (added)
+│    │      │     └── topfive.js (added)
+│    │      └── resources
+│    │            └── devices.js
+│    ├── dashboard
+│    │      ├── dashboard.js (revised)
+│    │      ├── dashboard.tpl.html  (revised)
+│    │      └── topfive.tpl.html  (added)
+│    │
+│    └── app.js
+│
+├── assets
+│     └── stylesheets
+│            └── app.css  (revised)
+├── index.html  (revised)
 ```
+
+#### mysort/topfive.js
+   * I created my own sort function here. The function take an array and a key as input, and output a sorted array. 
+   * The function is reusable by taking different key and sort the array not in place (in a copied array).
+   * Idea: 
+   copy the array first, and then compare the element in the copied array according to the descending order of the key, trim the sorted array to reserve the top 5 items.
+   * Reference: 
+      * https://stackoverflow.com/questions/8837454/sort-array-of-objects-by-single-key-with-date-value
+      * https://stackoverflow.com/questions/953071/how-to-easily-truncate-an-array-with-javascript/6928247
+      * https://stackoverflow.com/questions/9592740/how-can-you-sort-an-array-without-mutating-the-original-array
+      
+#### dashboard/dashboard.js
+   * I added two reusable component (directive: top-five, contenteditable)
+   * top-five: (apply two-way binding)
+   * contenteditable: provide function that edit the text in place and update the corresponding field in top-five table.
+      * 
+   
+#### dashboard/dashboard.tpl.html
+#### dashboard/topfive.tpl.html
+
+#### assets/stylesheets/app.css
